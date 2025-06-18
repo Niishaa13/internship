@@ -29,5 +29,4 @@ void main()
 	
 	//printing the profit details
 	printf("maximun profit: %d\nbuy date:%d\nsell day:%d\n",profit,buy_day+1,sell_day+1);
-	getch();
 }
