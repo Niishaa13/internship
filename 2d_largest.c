@@ -5,7 +5,7 @@ int main()
 {
    int arr[10];
    int arr1[10];
-   int n,i;
+   int n,i,j;
    int max,max1;
    
    // getting  array 1 inputs from the user
@@ -22,9 +22,9 @@ int main()
        
        
        printf("enter the 2nd array element:\n");
-       for(i=0;i<n;i++)
+       for(j=0;j<n;j++)
        {
-           scanf("%d",&arr1[i]);
+           scanf("%d",&arr1[j]);
        }
        
        // check max value in array 1
@@ -38,20 +38,20 @@ int main()
        max=arr[i];
       }
   }
-   printf("%d",max);
+   printf("the largest number in array 1 : %d",max);
 printf("\n");
 
 // check max value in array 2
 
 max1=arr1[0];
-for(i=1;i<n;i++)
+for(j=1;j<n;j++)
 {
-    if(max1<arr1[i])
+    if(max1<arr1[j])
     {
-        max1=arr1[i];
+        max1=arr1[j];
     }
 }
- printf("%d",&max1); 
+ printf("the largest number in array 2 %d",max1); 
 printf("\n");
 
 // check max value in array 1 and array 2
@@ -60,7 +60,7 @@ if(max<max1)
 {
     max=max1;
 }
-printf("the largest number is %d",max);
+printf("the largest number in array 1 and array 2 is %d",max);
 return 0;
 }
 
