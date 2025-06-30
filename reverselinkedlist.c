@@ -53,8 +53,9 @@ void reverse()
         current->next=prev;
         prev=current;
         current=next;
-        head=prev;
+        
     }
+    head=prev;
 }
    int main()
    {
@@ -64,7 +65,7 @@ void reverse()
        printf("----linked list-----\n");
        printf("1.insert at beginning\n");
        printf("2.display\n");
-       printf("3.reverse \n");
+       printf("3.reverse\n");
        printf("4.Exit\n");
        printf("Enter your choice:");
        scanf("%d",&choice);
